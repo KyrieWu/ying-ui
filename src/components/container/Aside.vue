@@ -1,12 +1,12 @@
 <template>
-  <aside class="el-aside" :style="{width}">
+  <aside class="y-aside" :style="{width}">
 <slot/>
   </aside>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'ElAside'
+  name: 'YAside'
 }
 </script>
 <script setup lang="ts">

@@ -1,12 +1,12 @@
 <template>
-  <header class="el-header" :style="{ height }">
+  <header class="y-header" :style="{ height }">
     <slot />
   </header>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'ElHeader'
+  name: 'YHeader'
 }
 </script>
 <script setup lang="ts">

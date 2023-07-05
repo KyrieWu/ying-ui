@@ -1,12 +1,12 @@
 <template>
-  <main class="el-main">
+  <main class="y-main">
     <slot />
   </main>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'ElMain'
+  name: 'YMain'
 }
 </script>
 <script setup lang="ts">

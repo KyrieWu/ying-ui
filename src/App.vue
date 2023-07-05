@@ -1,14 +1,18 @@
 <template>
-  <el-container>
-    <el-aside width="200px">
+  <y-container>
+    <y-aside width="200px">
       Aside
-    </el-aside>
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-      <el-footer>Footer</el-footer>
-    </el-container>
-  </el-container>
+    </y-aside>
+    <y-container>
+      <y-header>Header</y-header>
+      <y-main>Main</y-main>
+      <y-footer>Footer</y-footer>
+    </y-container>
+  </y-container>
+  <hr>
+  <y-button size="small" type="primary">搜索</y-button>
+  <y-button size="medium" type="success">成功</y-button>
+  <y-button size="large" type="danger">失败</y-button>
 </template>
 
 <script setup lang="ts">
@@ -21,38 +25,38 @@ body {
   margin: 10px auto;
 }
 
-.el-header,
-.el-footer {
+.y-header,
+.y-footer {
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
   line-height: 60px;
 }
 
-.el-aside {
+.y-aside {
   background-color: #d3dce6;
   color: #333;
   text-align: center;
   line-height: 200px;
 }
 
-.el-main {
+.y-main {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
   line-height: 160px;
 }
 
-body>.el-container {
+body>.y-container {
   margin-bottom: 40px;
 }
 
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
+.y-container:nth-child(5) .y-aside,
+.y-container:nth-child(6) .y-aside {
   line-height: 260px;
 }
 
-.el-container:nth-child(7) .el-aside {
+.y-container:nth-child(7) .y-aside {
   line-height: 320px;
 }
 </style>

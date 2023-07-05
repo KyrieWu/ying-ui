@@ -1,12 +1,12 @@
 <template>
-  <section class="el-container" :class="{ 'is-vertical': isVertical }">
+  <section class="y-container" :class="{ 'is-vertical': isVertical }">
     <slot />
   </section>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'ElContainer'
+  name: 'YContainer'
 }
 </script>
 <script setup lang="ts">
@@ -23,7 +23,7 @@ const isVertical = computed(() => {
   if (slots && slots.default) {
     return slots.default().some((vn: VNode) => {
       const tag = (vn.type as Component).name
-      return tag === 'ElHeader' || tag === 'ElFooter'
+      return tag === 'YHeader' || tag === 'YFooter'
     })
   } else {
     return props.direction === 'vertical'

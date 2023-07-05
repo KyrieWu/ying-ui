@@ -1,12 +1,12 @@
 <template>
-  <footer class="el-footer" :style="{ height }">
+  <footer class="y-footer" :style="{ height }">
     <slot />
   </footer>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'ElFooter'
+  name: 'YFooter'
 }
 </script>
 <script setup lang="ts">

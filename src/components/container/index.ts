@@ -1,16 +1,16 @@
 import { App } from "vue";
-import ElContainer from "./Container.vue";
-import ElHeader from "./Header.vue";
-import ElFooter from "./Footer.vue";
-import ElAside from "./Aside.vue";
-import ElMain from "./Main.vue";
+import YContainer from "./Container.vue";
+import YHeader from "./Header.vue";
+import YFooter from "./Footer.vue";
+import YAside from "./Aside.vue";
+import YMain from "./Main.vue";
 
 export default {
   install(app: App) {
-    app.component(ElContainer.name, ElContainer);
-    app.component(ElHeader.name, ElHeader);
-    app.component(ElFooter.name, ElFooter);
-    app.component(ElAside.name, ElAside);
-    app.component(ElMain.name, ElMain);
+    app.component(YContainer.name, YContainer);
+    app.component(YHeader.name, YHeader);
+    app.component(YFooter.name, YFooter);
+    app.component(YAside.name, YAside);
+    app.component(YMain.name, YMain);
   },
 };
