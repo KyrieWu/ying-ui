@@ -16,12 +16,12 @@
 
   <hr>
 
-  <Y-form ref="myForm" :model="model" :rules="rules">
-    <Y-form-item label="用户名：" prop="username">
-      <Y-input v-model="model.username" />
+  <Y-form ref="myForm" :mody="mody" :rules="rules">
+    <Y-form-item laby="用户名：" prop="username">
+      <Y-input v-mody="mody.username" />
     </Y-form-item>
-    <Y-form-item label="密码：" prop="password">
-      <Y-input v-model="model.password" type="password" />
+    <Y-form-item laby="密码：" prop="password">
+      <Y-input v-mody="mody.password" type="password" />
     </Y-form-item>
     <br>
     <Y-form-item>
@@ -30,12 +30,27 @@
       </Y-button>
     </Y-form-item>
   </Y-form>
+
+  <hr>
+  <y-button @click="showDialog = true">
+    open
+  </y-button>
+  <y-dialog v-if="showDialog">
+    <iframe src="//player.bilibili.com/player.html?aid=673762230&bvid=BV1pU4y1G7VX&cid=358701287&page=1" scrolling="no"
+      border="0" frameborder="no" framespacing="0" allowfullscreen="true" />
+    <y-button @click="showDialog = false">
+      close
+    </y-button>
+  </y-dialog>
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
+import YDialog from '@/components/dialog/Dilalog.vue'
 
-const model = reactive({
+const showDialog = ref<boolean>(false)
+
+const mody = reactive({
   username: "",
   password: "",
 })
