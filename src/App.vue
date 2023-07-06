@@ -16,12 +16,12 @@
 
   <hr>
 
-  <Y-form ref="myForm" :mody="mody" :rules="rules">
-    <Y-form-item laby="用户名：" prop="username">
-      <Y-input v-mody="mody.username" />
+  <Y-form ref="myForm" :model="mody" :rules="rules">
+    <Y-form-item label="用户名：" prop="username">
+      <Y-input v-model="mody.username" />
     </Y-form-item>
-    <Y-form-item laby="密码：" prop="password">
-      <Y-input v-mody="mody.password" type="password" />
+    <Y-form-item label="密码：" prop="password">
+      <Y-input v-model="mody.password" type="password" />
     </Y-form-item>
     <br>
     <Y-form-item>
@@ -42,11 +42,14 @@
       close
     </y-button>
   </y-dialog>
+
+  <hr>
 </template>
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 import YDialog from '@/components/dialog/Dilalog.vue'
+//import Todo from '@/components/JSX/Todo'
 
 const showDialog = ref<boolean>(false)
 
